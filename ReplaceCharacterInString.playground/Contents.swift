@@ -3,9 +3,11 @@ import UIKit
 // This is not mutating
 let testString = "This is a test string"
 var testStringReplacedOccurences = testString.replacingOccurrences(of: "is",
-                                                                   with: "replaced")
+                                                                   with: "*")
 
 print("testStringReplacedOccurences: ", testStringReplacedOccurences)
+
+// OUTPUT: Th* * a test string
 
 // https://developer.apple.com/documentation/foundation/nsregularexpression
 var testStringOccurences2 = testString.replacingOccurrences(of: #"\bis"#,
